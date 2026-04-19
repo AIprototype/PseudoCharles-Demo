@@ -24,4 +24,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "PseudoCharlesDemo"
 include(":app")
- 
+include(":core:domain")
+include(":core:data")
+include(":core:presentation")
+include(":core:design-system")
+include(":feature:brewery:domain")
+include(":feature:brewery:data")
+include(":feature:brewery:presentation")

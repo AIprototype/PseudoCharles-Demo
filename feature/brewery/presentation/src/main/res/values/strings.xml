@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search_placeholder">Search breweries by name…</string>
+    <string name="cd_clear_search">Clear search</string>
+    <string name="cd_navigate_back">Navigate back</string>
+    <string name="cd_open_mock_config">Open mock configuration</string>
+    <string name="no_results">No breweries found</string>
+    <string name="detail_title">Brewery Detail</string>
+    <string name="label_address">Address</string>
+    <string name="label_location">Location</string>
+    <string name="action_call">Call</string>
+    <string name="action_website">Website</string>
+    <string name="app_bar_title">Brewery Explorer</string>
+</resources>
