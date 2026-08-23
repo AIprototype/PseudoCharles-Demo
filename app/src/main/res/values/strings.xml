@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PseudoCharlesDemo</string>
+
+    <string name="app_bar_title">Brewery Explorer</string>
+    <string name="cd_open_mock_config">Open mock configuration</string>
+
+    <string name="tab_explore">Explore</string>
+    <string name="tab_live">Live</string>
+    <string name="tab_dev_tools">Dev Tools</string>
+
+    <string name="throttle_banner">Throttled · %1$s</string>
+    <string name="throttle_banner_action">Full speed</string>
 </resources>

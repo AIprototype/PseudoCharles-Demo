@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      Needed to tell "this device is offline" apart from "the third-party echo server is down".
+      Without it the live feed could only ever report a generic failure, and a reader would not be
+      able to distinguish an outage from PseudoCharles failing to capture frames.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

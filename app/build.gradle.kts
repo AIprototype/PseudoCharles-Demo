@@ -47,6 +47,9 @@ dependencies {
     implementation(project(":feature:brewery:domain"))
     implementation(project(":feature:brewery:data"))
     implementation(project(":feature:brewery:presentation"))
+    implementation(project(":feature:devtools:domain"))
+    implementation(project(":feature:devtools:data"))
+    implementation(project(":feature:devtools:presentation"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -64,7 +67,9 @@ dependencies {
     implementation(libs.koin.androidx.compose)
 
     debugImplementation(libs.pseudocharles)
+    debugImplementation(libs.pseudocharles.server)
     releaseImplementation(libs.pseudocharles.noop)
+    releaseImplementation(libs.pseudocharles.server.noop)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

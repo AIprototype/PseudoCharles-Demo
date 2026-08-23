@@ -4,6 +4,8 @@ import android.app.Application
 import com.zeus.pseudocharlesdemo.core.data.coreDataModule
 import com.zeus.pseudocharlesdemo.feature.brewery.data.breweryDataModule
 import com.zeus.pseudocharlesdemo.feature.brewery.presentation.breweryPresentationModule
+import com.zeus.pseudocharlesdemo.feature.devtools.data.devToolsDataModule
+import com.zeus.pseudocharlesdemo.feature.devtools.presentation.devToolsPresentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -17,7 +19,9 @@ class PseudoCharlesDemoApp : Application() {
                 platformAppModule,
                 coreDataModule,
                 breweryDataModule,
-                breweryPresentationModule
+                breweryPresentationModule,
+                devToolsDataModule,
+                devToolsPresentationModule
             )
         }
     }

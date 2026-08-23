@@ -19,7 +19,7 @@ coil = "2.7.0"
 navigationCompose = "2.8.4"
 turbine = "1.2.0"
 assertk = "0.28.1"
-pseudocharles = "1.0.0-alpha10"
+pseudocharles = "1.1.0-alpha11"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -63,6 +63,8 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 
 pseudocharles = { group = "io.github.aiprototype", name = "pseudocharles", version.ref = "pseudocharles" }
 pseudocharles-noop = { group = "io.github.aiprototype", name = "pseudocharles-noop", version.ref = "pseudocharles" }
+pseudocharles-server = { group = "io.github.aiprototype", name = "pseudocharles-server", version.ref = "pseudocharles" }
+pseudocharles-server-noop = { group = "io.github.aiprototype", name = "pseudocharles-server-noop", version.ref = "pseudocharles" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit5" }
