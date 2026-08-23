@@ -7,5 +7,6 @@ kotlin {
 }
 
 dependencies {
+    implementation(project(":core:domain"))
     api(libs.kotlinx.coroutines.core)
 }

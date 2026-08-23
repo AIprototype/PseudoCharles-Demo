@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Live feed -->
+    <string name="live_feed_title">Taproom Live</string>
+    <string name="live_feed_disclaimer">Simulated feed. Open Brewery DB has no realtime API, so this app sends Socket.IO-shaped events to a public echo server, which bounces them straight back. The round trip is the point: the echoed copies arrive as inbound frames with a decodable event name.</string>
+    <string name="live_feed_endpoint">Endpoint: %1$s</string>
+    <string name="live_feed_connect">Connect</string>
+    <string name="live_feed_disconnect">Disconnect</string>
+    <string name="live_feed_retry">Retry</string>
+    <string name="live_feed_auto_emit">Emit a check-in every 2.5s</string>
+    <string name="live_feed_send_checkin">Check-in event</string>
+    <string name="live_feed_send_text">Plain text</string>
+    <string name="live_feed_send_binary">Binary</string>
+    <string name="live_feed_clear">Clear</string>
+    <string name="live_feed_open_inspector">Open Sockets inspector</string>
+    <string name="live_feed_empty">No frames yet. Connect, then send a check-in.</string>
+    <string name="live_feed_frames_header">Frames (%1$d)</string>
+
+    <!-- Live feed status -->
+    <string name="live_feed_status_disconnected">Disconnected</string>
+    <string name="live_feed_status_connecting">Connecting…</string>
+    <string name="live_feed_status_connected">Connected</string>
+    <string name="live_feed_status_unreachable_title">Echo server unreachable</string>
+    <string name="live_feed_status_unreachable_body">echo.websocket.org did not answer. This is a third-party outage, not a problem with socket inspection — HTTP capture and every other tab are unaffected.</string>
+    <string name="live_feed_status_no_network_title">Device is offline</string>
+    <string name="live_feed_status_no_network_body">This device has no internet connection. Turn off airplane mode or reconnect to Wi-Fi, then retry.</string>
+    <string name="live_feed_status_rejected_title">Handshake refused (HTTP %1$d)</string>
+    <string name="live_feed_status_rejected_body">The echo server refused the WebSocket upgrade. Again, third-party — not the SDK.</string>
+    <string name="live_feed_status_closed_title">Server closed the connection</string>
+    <string name="live_feed_status_closed_body">Closed with code %1$d: %2$s</string>
+    <string name="live_feed_status_unknown_title">Connection failed</string>
+    <string name="live_feed_status_unknown_body">Unexpected failure talking to echo.websocket.org: %1$s. Socket capture itself is unaffected — check the Sockets tab, the frames sent before this point are still there.</string>
+
+    <!-- Dev tools -->
+    <string name="dev_tools_title">Dev Tools</string>
+    <string name="dev_tools_unavailable">PseudoCharles is not on the classpath. This is a release build, where the no-op artifact compiles the SDK away entirely.</string>
+
+    <string name="dev_tools_mocks_header">Mocks &amp; traffic</string>
+    <string name="dev_tools_open_config">Open PseudoCharles</string>
+    <string name="dev_tools_mock_active">A mock is currently active — responses are being faked</string>
+    <string name="dev_tools_mock_inactive">No active mock. Requests hit the real API.</string>
+    <string name="dev_tools_clear_mocks">Clear all mocks</string>
+    <string name="dev_tools_mocks_cleared">All mocks and observed endpoints cleared</string>
+
+    <string name="dev_tools_network_header">Mocked network speed</string>
+    <string name="dev_tools_network_body">Applies to every request through the interceptor, including mocked ones. Latency is additive, as in Chrome DevTools.</string>
+    <string name="dev_tools_network_current">Active: %1$s</string>
+    <string name="dev_tools_network_detail">%1$d kbps down · %2$d ms RTT</string>
+    <string name="dev_tools_network_flaky">Flaky · 10% timeouts</string>
+    <string name="dev_tools_network_flaky_desc">Custom profile: 1000/200 kbps, 500 ms, 60% jitter, one request in ten black-holes until the read timeout.</string>
+
+    <string name="dev_tools_dashboard_header">Web dashboard</string>
+    <string name="dev_tools_dashboard_toggle">Run remote config server</string>
+    <string name="dev_tools_dashboard_stopped">Stopped</string>
+    <string name="dev_tools_dashboard_running">Running at %1$s</string>
+    <string name="dev_tools_dashboard_failed">Failed: %1$s</string>
+    <string name="dev_tools_dashboard_copy">Copy URL</string>
+    <string name="dev_tools_dashboard_copied">URL copied</string>
+    <string name="dev_tools_dashboard_pin">Default PIN: 4572</string>
+    <string name="dev_tools_dashboard_chrome">Chrome 115+ forces HTTPS on network IPs. Use Safari or Firefox, or run: adb forward tcp:8432 tcp:8432 and open http://localhost:8432</string>
+
+    <string name="dev_tools_notification_header">Persistent traffic notification</string>
+    <string name="dev_tools_notification_toggle">Show traffic notification</string>
+    <string name="dev_tools_notification_disclaimer">Write-only setting. The SDK exposes no getter for it, so this switch shows what this app last requested — the live state lives in PseudoCharles → Settings and in your system notification settings, and the two can drift.</string>
+    <string name="dev_tools_notification_permission_needed">Notification permission is required on Android 13+.</string>
+    <string name="dev_tools_notification_open_settings">Open notification settings</string>
+    <string name="dev_tools_notification_denied">Permission denied — the notification cannot be shown until it is granted in system settings.</string>
+
+    <string name="dev_tools_capture_header">Capture</string>
+    <string name="dev_tools_capture_traffic">HTTP traffic capture</string>
+    <string name="dev_tools_capture_sockets">Socket frame capture</string>
+    <string name="dev_tools_capture_counts">%1$d HTTP entries · %2$d socket frames</string>
+    <string name="dev_tools_capture_clear_traffic">Clear traffic</string>
+    <string name="dev_tools_capture_clear_sockets">Clear frames</string>
+
+</resources>
